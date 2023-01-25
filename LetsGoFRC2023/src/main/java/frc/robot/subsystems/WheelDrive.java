@@ -16,8 +16,8 @@ private final double MAX_VOLTS = 4.95;
 
 private PIDController pidController2;
 public WheelDrive (int speedMotor, int angleMotor) {
-    this.angleMotor = new Talon (angleMotor);
     this.speedMotor = new PWMSparkMax (speedMotor);
+    this.angleMotor = new Talon (angleMotor);
     // pidController2 = new PIDController (1, 0, 0, angleMotor.getEncoder(), this.angleMotor);
     // pidController2.setOutputRange (-1, 1);
     // pidController2.setContinuous ();
